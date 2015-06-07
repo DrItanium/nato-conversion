@@ -1,0 +1,5 @@
+This program takes in input from the command line and translates it to its
+corresponding NATO callsign names. 
+
+This is useful for when you have to give things like your email address over
+the phone and you've got a bad connection.
