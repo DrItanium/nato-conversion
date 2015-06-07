@@ -123,15 +123,12 @@ func main() {
 		flag.Usage()
 		return
 	}
-	fmt.Println("Input was", *input)
-	result := translateWord(*input)
+	var separator string
 	if *onePerLine {
-		for _, value := range result {
-			if *onePerLine {
-				fmt.Println(value)
-			}
-		}
+		separator = "\n"
 	} else {
-		fmt.Println(strings.Join(result, " "))
+		separator = " "
 	}
+	fmt.Printf("Input was \"%s\"\n", *input)
+	fmt.Println(strings.Join(translateWord(*input), separator))
 }
