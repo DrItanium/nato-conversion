@@ -22,6 +22,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"strings"
 )
 
 var onePerLine = flag.Bool("one-per-line", false, "The translation of each character is on its own line")
