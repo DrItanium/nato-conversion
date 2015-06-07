@@ -102,6 +102,8 @@ func translateLetter(a rune) string {
 		return "Nine"
 	case '0':
 		return "Zero"
+	case '.':
+		return "Decimal"
 	default:
 		return fmt.Sprintf("%c", a)
 	}
